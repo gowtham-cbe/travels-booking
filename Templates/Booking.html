@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Booking{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<body>
+    <body style="background-color:rgb(201, 236, 3);">
+<form action="{{ url_for('sign_up') }}" method="POST">
+    
+    <h1 style="background-color:rgb(243, 239, 3);">YELLOW Travels</h1>
+    <label for="name">Passenger name:</label>
+    <input type="text" name="name"><br>
+    <label for="Mobile">Mobile num :</label>
+    <input type="text" name="Mobile"><br>
+    <label for="From">From:</label>
+    <input type="text" name="From"><br>
+    <label for="To">To:</label>
+    <input type="text" name="To"><br>
+    <label for="Adhar">Adhar num:</label>
+    <input type="text" name="Adhar"><br>
+    <label for="Mail">Mail:</label>
+    <input type="text" name="Mail"><br>
+    <input type="submit" value="submit">
+    <input type="reset" value="reset"><br>
+
+    
+</form>
+</body>
+</body>
+</html>
+{% endblock %}

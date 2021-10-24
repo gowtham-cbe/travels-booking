@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Details{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+<body style="background-color:rgb(91, 182, 224)">
+
+<title>Details</title>
+</head>
+
+<body>
+    <p style="color:rgb(0, 255, 55)">PASSENGER DETAILS</p>
+    <style>
+        table,th,td{border: 3px solid rgb(0, 0, 0);border-collapse: collapse;}
+    </style>
+<table>
+    <tr>
+        <th style="color:rgb(241, 228, 41)">Passenger name</th>
+        <th style="color:rgb(241, 228, 41)">mobile</th>
+        <th style="color:rgb(241, 228, 41)">From</th>
+        <th style="color:rgb(241, 228, 41)">To</th>
+        <th style="color:rgb(241, 228, 41)">Adhar_num</th>
+        <th style="color:rgb(241, 228, 41)">Mail</th>
+    </tr>
+    {% for i in data %}
+    <tr>
+        <td>{{i.name}}</td>
+        <td>{{i.Mobile}}</td>
+        <td>{{i.From}}</td>
+        <td>{{i.To}}</td>
+        <td>{{i.Adhar}}</td>
+        <td>{{i.Mail}}</td>
+    </tr>
+    {% endfor %}
+
+</body>
+</table>
+</body>
+</html>
+{% endblock %}

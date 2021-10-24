@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% block title %}Add data{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>About</title>
+</head>
+<body>
+    <body style="background-color:rgb(10, 219, 246);"></body>
+    <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#5860cf;padding:15px;">
+  <h1 style="color:rgb(255, 230, 2);">TOURS & TRAVELS</h1>
+  <h3 style="color:rgb(0, 0, 0);">Safe and Speed</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div style="background-color:rgb(252, 248, 9);">
+    <div class="menuitem">Coimbatore</div></div>
+    <div style="background-color:rgb(214, 211, 21);">
+    <div class="menuitem">Bangalore</div></div>
+    <div style="background-color:rgb(202, 200, 60);">
+    <div class="menuitem">Chennai</div></div>
+    <div style="background-color:rgb(204, 203, 115);">
+    <div class="menuitem">Delhi</div></div>
+
+  
+  </div>
+
+  <div class="main">
+    <div style="background-color:rgb(228, 226, 96);">
+
+    <h2>Travel</h2>
+    
+
+
+    <p>The bus started its journey little late than scheduled.<br><br>
+      The people seated comfortably near the windows wore happy faces while looking at the outside world.<br>
+      <div style="background-color:rgb(248, 246, 149);">
+      The people seated near the aisle were cursing the standing persons who had no option but to occasionally lean on the seat corners.
+      <div style="background-color:rgb(230, 229, 180);">
+      The air was hot and filled with strange unpleasant smells.<br>
+      Some people were trying to talk in loud voices in spite of the noise and din.<br>
+      The people who were standing had no option but to stare blankly at anything that is ahead of them.</p>
+    <img src="proimages.jpg" style="width:100%">
+      
+      </div>
+    </div>
+  </div>
+
+  <div class="left">
+    <h2>Coibatore</h2>
+    <p>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+    <h2>Bangalore</h2>
+    <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
+    <h2>chennai</h2>
+    <p>The Walk is free!</p>
+    <h2>delhi</h2>
+  </div>
+</div>
+
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
+
+</body>
+</html>
+
+
+</body>
+</html>
+{% endblock %}
